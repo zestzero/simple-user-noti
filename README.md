@@ -1,5 +1,5 @@
 # simple-user-noti
-![Overview](https://github.com/zestzero/simple-user-noti/blob/main/documents/overview.jpg?raw=true)
+![Overview](https://github.com/zestzero/simple-user-noti/blob/main/documents/overview.png?raw=true)
 
 ## Components
 ### Web server - [Repository](https://github.com/zestzero/simple-user-noti-web)
