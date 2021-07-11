@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+    web:
+        container_name: simple_noti_web
+        image: simple-noti-web:1.0.0
+        build:
+            context: ./web
+            target: development
+            dockerfile: ./Dockerfile
+        command: yarn start:debug
+        ports:
+            - 8080:8080
+        networks:
+            - simplenoti-network
+        volumes:
+            - ./web:/usr/src/app
+            - ./web/node_modules:/usr/src/app/node_modules
+        restart: unless-stopped
+    gateway:
+        container_name: simple_noti_gateway
+        image: simple-noti-gateway:1.0.0
+        build:
+            context: ./gateway
+            target: development
+            dockerfile: ./Dockerfile
+        command: yarn start:debug
+        ports:
+            - 3000:3000
+        networks:
+            - simplenoti-network
+        volumes:
+            - ./gateway:/usr/src/app
+            - ./gateway/node_modules:/usr/src/app/node_modules
+        restart: unless-stopped
+
+networks:
+    simplenoti-network:
