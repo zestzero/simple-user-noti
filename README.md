@@ -1,6 +1,12 @@
 # simple-user-noti
 ![Overview](https://github.com/zestzero/simple-user-noti/blob/main/documents/overview.png?raw=true)
 
+## Development
+> Simply start development environment using docker
+```bash
+$ docker-compose up
+```
+
 ## Components
 ### Web server - [Repository](https://github.com/zestzero/simple-user-noti-web)
 > A NextJs with NestJs server-side and ReactJs on client-side.
