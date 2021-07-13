@@ -33,6 +33,22 @@ services:
             - ./gateway:/usr/src/app
             - ./gateway/node_modules:/usr/src/app/node_modules
         restart: unless-stopped
+    backend:
+        container_name: simple_noti_backend
+        image: simple-noti-backend:1.0.0
+        build:
+            context: ./backend
+            target: development
+            dockerfile: ./Dockerfile
+        command: yarn start:debug
+        ports:
+            - 5000:5000
+        networks:
+            - simplenoti-network
+        volumes:
+            - ./backend:/usr/src/app
+            - ./backend/node_modules:/usr/src/app/node_modules
+        restart: unless-stopped
 
 networks:
     simplenoti-network:
