@@ -46,3 +46,8 @@ $ git submodule update
 > Evaluating Performance of REST vs. gRPC - https://medium.com/@EmperorRXF/evaluating-performance-of-rest-vs-grpc-1b8bdf0b22da
 > NestJs supports GQL - https://docs.nestjs.com/graphql/quick-start
 > NestJs also supports gRPC - https://docs.nestjs.com/microservices/grpc#sample-grpc-service
+
+> Interesting articles about integrating centralized logging system to consume logs from each micro-services using the following components:
+> - [Winston](https://github.com/winstonjs/winston) logging library writting logs into files.
+> - [Fluentd](https://github.com/fluent/fluentd-docker-image) data collector forwarding to a logstash.
+> - [ELK](https://logz.io/learn/complete-guide-elk-stack/#installing-elk) steps by steps installation guide for ELK stack to display logs in Kibana web UI.
