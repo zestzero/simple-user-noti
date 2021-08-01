@@ -51,3 +51,4 @@ $ git submodule update
 > - [Winston](https://github.com/winstonjs/winston) logging library writting logs into files.
 > - [Fluentd](https://github.com/fluent/fluentd-docker-image) data collector forwarding to a logstash.
 > - [ELK](https://logz.io/learn/complete-guide-elk-stack/#installing-elk) steps by steps installation guide for ELK stack to display logs in Kibana web UI.
+> - [Microservice with Nestjs](https://docs.nestjs.com/microservices/basics) basic installation to connect between microservice using Nestjs/microservice.
