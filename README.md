@@ -37,3 +37,18 @@ $ git submodule update
 
 > Event source, web interface to server-sent events. It's not IE compatible at all.
 > https://developer.mozilla.org/en-US/docs/Web/API/EventSource
+
+> Interesting React UI library
+> Mantine - Build fully functional accessible web applications with ease https://mantine.dev
+
+> Interesting articles about combining GraphQL for client and gRPC for micro-service
+> When GQL meets GRPC - https://medium.com/@svengau/when-graphql-meets-grpc-3e9729d32e05
+> Evaluating Performance of REST vs. gRPC - https://medium.com/@EmperorRXF/evaluating-performance-of-rest-vs-grpc-1b8bdf0b22da
+> NestJs supports GQL - https://docs.nestjs.com/graphql/quick-start
+> NestJs also supports gRPC - https://docs.nestjs.com/microservices/grpc#sample-grpc-service
+
+> Interesting articles about integrating centralized logging system to consume logs from each micro-services using the following components:
+> - [Winston](https://github.com/winstonjs/winston) logging library writting logs into files.
+> - [Fluentd](https://github.com/fluent/fluentd-docker-image) data collector forwarding to a logstash.
+> - [ELK](https://logz.io/learn/complete-guide-elk-stack/#installing-elk) steps by steps installation guide for ELK stack to display logs in Kibana web UI.
+> - [Microservice with Nestjs](https://docs.nestjs.com/microservices/basics) basic installation to connect between microservice using Nestjs/microservice.
